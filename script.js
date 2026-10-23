@@ -45,7 +45,7 @@ var NAV = [
   var header = document.createElement("header");
   header.innerHTML =
     '<div class="wrap nav">' +
-      '<a class="brand" href="index.html"><img class="logo" src="images/logo-school-icon.png" alt=""><span>' +
+      '<a class="brand" href="index.html"><img class="logo" src="logo-school-icon.png" alt=""><span>' +
         '<b data-l="el">29ο Δημοτικό Σχολείο Λάρισας</b><b data-l="en">29th Primary School of Larissa</b>' +
         '<small data-l="el">Ευρωπαϊκά Προγράμματα</small><small data-l="en">European Projects</small>' +
       '</span></a>' +
@@ -70,10 +70,10 @@ var NAV = [
         NAV.map(function (n) { return '<a href="' + n[0] + '">' + bi(n[1], n[2]) + '</a>'; }).join("<br>") + '</p></div>' +
       '<div><h3>' + bi("Ακολουθήστε μας", "Follow us") + '</h3><p><a href="' + SCHOOL.facebook + '" target="_blank" rel="noopener">Facebook</a></p></div>' +
     '</div>' +
-    '<div class="logos"><img src="images/logo-school.png" alt="29ο Δημοτικό Σχολείο Λάρισας">' +
-      '<img src="images/logo-155.png" alt="155 Pieces, One Puzzle">' +
-      '<img src="images/etwinning-school.png" alt="eTwinning School 2026-2027">' +
-      '<img src="images/eu-cofunded.png" alt="Co-funded by the European Union" onerror="this.remove()"></div>' +
+    '<div class="logos"><img src="logo-school.png" alt="29ο Δημοτικό Σχολείο Λάρισας">' +
+      '<img src="logo-155.png" alt="155 Pieces, One Puzzle">' +
+      '<img src="etwinning-school.png" alt="eTwinning School 2026-2027">' +
+      '<img src="eu-cofunded.png" alt="Co-funded by the European Union" onerror="this.remove()"></div>' +
     '<div class="eu">' + bi(
       "Χρηματοδοτείται από την Ευρωπαϊκή Ένωση. Οι απόψεις και οι γνώμες που διατυπώνονται εκφράζουν αποκλειστικά τις απόψεις των συντακτών και δεν αντιπροσωπεύουν κατ’ ανάγκη τις απόψεις της Ευρωπαϊκής Ένωσης ή του Ευρωπαϊκού Εκτελεστικού Οργανισμού Εκπαίδευσης και Πολιτισμού (EACEA). Η Ευρωπαϊκή Ένωση και ο EACEA δεν μπορούν να θεωρηθούν υπεύθυνοι για τις εκφραζόμενες απόψεις.",
       "Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.") +
