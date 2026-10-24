@@ -71,17 +71,21 @@ var NAV = [
         NAV.map(function (n) { return '<a href="' + n[0] + '">' + bi(n[1], n[2]) + '</a>'; }).join("<br>") + '</p></div>' +
       '<div><h3>' + bi("Ακολουθήστε μας", "Follow us") + '</h3><p><a href="' + SCHOOL.facebook + '" target="_blank" rel="noopener">Facebook</a></p></div>' +
     '</div>' +
-    '<div class="eu-logos"><img data-l="el" src="eu-cofunded-el.png" alt="Με τη συγχρηματοδότηση της Ευρωπαϊκής Ένωσης">' +
-      '<img data-l="en" src="eu-cofunded-en.png" alt="Co-funded by the European Union">' +
-      '<img src="logo-erasmus.png" alt="Erasmus+"></div>' +
-    '<div class="logos"><img src="logo-school.png" alt="29ο Δημοτικό Σχολείο Λάρισας">' +
-      '<img src="logo-155.png" alt="155 Pieces, One Puzzle">' +
-      '<img src="etwinning-school.png" alt="eTwinning School 2026-2027">' +
-      '</div>' +
     '<div class="eu">' + bi(
       "Χρηματοδοτείται από την Ευρωπαϊκή Ένωση. Οι απόψεις και οι γνώμες που διατυπώνονται εκφράζουν αποκλειστικά τις απόψεις των συντακτών και δεν αντιπροσωπεύουν κατ’ ανάγκη τις απόψεις της Ευρωπαϊκής Ένωσης ή του Ευρωπαϊκού Εκτελεστικού Οργανισμού Εκπαίδευσης και Πολιτισμού (EACEA). Η Ευρωπαϊκή Ένωση και ο EACEA δεν μπορούν να θεωρηθούν υπεύθυνοι για τις εκφραζόμενες απόψεις.",
       "Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.") +
     '</div></div>';
+  var strip = document.createElement("div");
+  strip.className = "logo-strip";
+  strip.innerHTML = '<div class="wrap">' +
+    '<img class="eu-flag" data-l="el" src="eu-cofunded-el.png" alt="Με τη συγχρηματοδότηση της Ευρωπαϊκής Ένωσης">' +
+    '<img class="eu-flag" data-l="en" src="eu-cofunded-en.png" alt="Co-funded by the European Union">' +
+    '<img src="logo-erasmus.png" alt="Erasmus+">' +
+    '<img src="etwinning-school.png" alt="eTwinning School 2026-2027">' +
+    '<img src="logo-155.png" alt="155 Pieces, One Puzzle">' +
+    '<img src="logo-school.png" alt="29ο Δημοτικό Σχολείο Λάρισας">' +
+    '</div>';
+  document.body.appendChild(strip);
   document.body.appendChild(footer);
 
   /* ---- Συμπλήρωση στοιχείων επικοινωνίας (data-fill="email" κ.λπ.) ---- */
