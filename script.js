@@ -6,7 +6,7 @@
 /* ✏️ ΣΤΟΙΧΕΙΑ ΣΧΟΛΕΙΟΥ — αλλάξτε τα ΜΟΝΟ εδώ και ενημερώνονται σε όλες τις σελίδες */
 var SCHOOL = {
   address_el: "31ης Αυγούστου 34, 41221 Λάρισα",
-  address_en: "31is Avgoustou 34, 41221 Larissa, Greece",
+  address_en: "34, 31st August Street, 41221 Larissa, Greece",
   phone: "2410 288327",
   email: "mail@29dim-laris.lar.sch.gr",
   web: "",          // π.χ. "https://29dim-laris.lar.sch.gr" (αφήστε κενό αν δεν θέλετε)
