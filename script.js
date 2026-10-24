@@ -41,7 +41,7 @@ var NAV = [
   /* ---- Header ---- */
   var page = location.pathname.split("/").pop() || "index.html";
   var links = NAV.map(function (n) {
-    return '<li><a href="' + n[0] + '"' + (n[0] === page ? ' class="active"' : '') + '>' + bi(n[1], n[2]) + '</a></li>';
+    return '<li><a href="' + n[0] + '"' + ((n[0] === page || (n[0] === "news.html" && page.indexOf("news-") === 0)) ? ' class="active"' : '') + '>' + bi(n[1], n[2]) + '</a></li>';
   }).join("");
   var header = document.createElement("header");
   header.innerHTML =

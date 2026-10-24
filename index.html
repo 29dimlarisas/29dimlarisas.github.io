@@ -8,7 +8,7 @@
 <script>try{if(localStorage.getItem("lang")==="en")document.documentElement.classList.add("l-en")}catch(e){}</script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="logo-school-icon.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -71,16 +71,20 @@
     <div class="section-title">
       <h2><span data-l="el">Τελευταία νέα</span><span data-l="en">Latest news</span></h2>
     </div>
-    <a class="card news-card" href="news.html#etwinning-school-2026">
-      <img src="etwinning-school-04.jpg" alt="eTwinning School 2026–2027">
-      <div>
-        <span class="tag y"><span data-l="el">Οκτώβριος 2026</span><span data-l="en">October 2026</span></span>
-        <h3>eTwinning School 2026–2027</h3>
-        <p data-l="el">Με χαρά παραλάβαμε την πλακέτα και τη σημαία eTwinning School, που σηματοδοτούν την απονομή της Ετικέτας Σχολείου eTwinning για το 2026–2027!</p>
-        <p data-l="en">We were delighted to receive the eTwinning School plaque and flag, marking the award of the eTwinning School Label for 2026–2027!</p>
-        <span class="more"><span data-l="el">Διαβάστε περισσότερα →</span><span data-l="en">Read more →</span></span>
-      </div>
-    </a>
+    <!-- ✏️ Εδώ φαίνονται τα 3 πιο πρόσφατα νέα. Για νέο άρθρο, αντιγράψτε ένα <a class="ncard"> ... </a> και βάλτε το ΠΡΩΤΟ. -->
+    <div class="news-grid">
+      <a class="ncard" href="news-etwinning-school.html">
+        <div class="thumb"><img src="news-etwinning-school-thumb.jpg" alt=""><span class="cat">eTwinning</span></div>
+        <div class="body">
+          <span class="date"><span data-l="el">Οκτώβριος 2026</span><span data-l="en">October 2026</span></span>
+          <h3><span data-l="el">Γίναμε eTwinning School 2026–2027!</span><span data-l="en">We are an eTwinning School 2026–2027!</span></h3>
+          <p data-l="el">Παραλάβαμε την πλακέτα και τη σημαία της Ετικέτας Σχολείου eTwinning: μια διάκριση για όλη τη σχολική μας κοινότητα.</p>
+          <p data-l="en">We received the eTwinning School Label plaque and flag: a distinction for our whole school community.</p>
+          <span class="more"><span data-l="el">Διαβάστε →</span><span data-l="en">Read more →</span></span>
+        </div>
+      </a>
+    </div>
+    <p class="center-link"><a class="btn ghost" href="news.html"><span data-l="el">Όλα τα νέα</span><span data-l="en">All news</span></a></p>
   </div>
 </section>
 
@@ -108,6 +112,6 @@
   </div>
 </section>
 
-<script src="script.js"></script>
+<script src="script.js?v=5"></script>
 </body>
 </html>
