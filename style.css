@@ -152,6 +152,25 @@ details ul{margin:0;padding-left:20px}
 .mobi[data-t~="pupils"]{--c:var(--green)}
 .legend{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px}
 
+/* ---------- Κάρτες δραστηριοτήτων / αποστολών ---------- */
+.act-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 6px}
+@media(max-width:900px){.act-grid{grid-template-columns:1fr}}
+.act{background:#fffaf2;border:1px solid var(--line);border-top:5px solid var(--c);border-radius:16px;padding:16px 18px}
+.act > b{display:block;font-size:1.02rem;color:var(--ink)}
+.act .num{display:inline-block;margin:6px 0 8px;font-weight:800;color:var(--c);font-size:1.25rem}
+.act p,.act li{font-size:.93rem;color:var(--text)}
+.act ul{padding-left:18px;margin:0}
+.act li{margin-bottom:6px}
+.act small{color:var(--muted)}
+.missions{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin:10px 0 4px}
+.mission{background:#fffaf2;border:1px solid var(--line);border-left:5px solid var(--yellow);border-radius:12px;padding:10px 14px}
+.mission .m{font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:#b07b00}
+.mission b{display:block;color:var(--ink)}
+.mission span.s{font-size:.85rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.chips span{background:#f3ecdf;border-radius:999px;padding:3px 11px;font-size:.82rem;font-weight:700}
+.partners li{margin-bottom:3px}
+
 /* ---------- Upcoming ---------- */
 .upcoming .card b{display:block;color:var(--red);font-weight:800;font-size:.84rem;text-transform:uppercase;letter-spacing:.05em}
 .upcoming h4{margin:6px 0 4px}

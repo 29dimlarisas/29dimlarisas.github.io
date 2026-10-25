@@ -7,7 +7,7 @@
 <script>try{if(localStorage.getItem("lang")==="en")document.documentElement.classList.add("l-en")}catch(e){}</script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="logo-school-icon.png">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -44,18 +44,22 @@
           <details>
             <summary><span data-l="el">Περισσότερα για το έργο</span><span data-l="en">Read more about the project</span></summary>
 
+            <h4>💡 <span data-l="el">Γιατί αυτό το έργο</span><span data-l="en">Why this project</span></h4>
+            <p data-l="el">Το σχολείο μας είναι ένα δημόσιο δημοτικό στο κέντρο της Λάρισας με 155 μαθητές από 6 έως 12 ετών, με Τμήμα Ένταξης, Τάξη Υποδοχής ΖΕΠ και Ολοήμερο Πρόγραμμα. Η σχολική μας κοινότητα είναι πολυπολιτισμική και με μεγάλη ποικιλία αναγκών. Για να σχεδιάσουμε το έργο, κάναμε έρευνα αναγκών με ερωτηματολόγια σε όλους τους εκπαιδευτικούς και σε 103 μαθητές. Από αυτήν προέκυψαν τέσσερις ανάγκες: περισσότερη συμπερίληψη, δημιουργική και ασφαλής χρήση της τεχνολογίας, καλύτερο σχολικό κλίμα, και πιο βιωματική μάθηση, όπως ζήτησαν οι ίδιοι οι μαθητές (gamification, projects, μάθηση στην ύπαιθρο, STEM).</p>
+            <p data-l="en">Our school is a public primary school in the centre of Larissa with 155 pupils aged 6–12, an inclusion class, a reception class for newly arrived pupils and an all-day programme. Our school community is multicultural, with a wide range of needs. To design the project, we carried out a needs analysis with questionnaires for all our teachers and 103 pupils. Four needs emerged: more inclusion, creative and safe use of technology, a better school climate, and more hands-on learning, just as the pupils themselves asked for (gamification, projects, outdoor learning, STEM).</p>
+
             <h4>🎯 <span data-l="el">Στόχοι</span><span data-l="en">Objectives</span></h4>
             <ul data-l="el">
-              <li>Συμπεριληπτική εκπαίδευση και διαχείριση της διαφορετικότητας</li>
-              <li>Ψηφιακές δεξιότητες και Τεχνητή Νοημοσύνη στη διδασκαλία</li>
-              <li>Ασφαλές, θετικό σχολικό κλίμα και κοινωνικο-συναισθηματική μάθηση</li>
-              <li>Εκσυγχρονισμός της διδασκαλίας μέσα από τη βιωματική μάθηση</li>
+              <li><b>Συμπερίληψη:</b> οι εκπαιδευτικοί μας να διαχειρίζονται αποτελεσματικά τη διαφορετικότητα και να προσφέρουν ποιοτική εκπαίδευση σε όλους τους μαθητές</li>
+              <li><b>Ψηφιακή επάρκεια:</b> κριτική, ασφαλής και παιδαγωγικά αποτελεσματική χρήση των ΤΠΕ και της Τεχνητής Νοημοσύνης στη διδασκαλία</li>
+              <li><b>Θετικό σχολικό κλίμα:</b> ασφαλές περιβάλλον μέσα από κοινωνικο-συναισθηματικές δεξιότητες και πρόληψη του εκφοβισμού</li>
+              <li><b>Σύγχρονη διδασκαλία:</b> βιωματική μάθηση και ενεργός συμμετοχή των μαθητών</li>
             </ul>
             <ul data-l="en">
-              <li>Inclusive education and managing diversity</li>
-              <li>Digital competence and Artificial Intelligence in teaching</li>
-              <li>A safe, positive school climate and social-emotional learning</li>
-              <li>Modernising our teaching through experiential learning</li>
+              <li><b>Inclusion:</b> helping our teachers manage diversity and offer quality education to every pupil</li>
+              <li><b>Digital competence:</b> critical, safe and effective use of ICT and Artificial Intelligence in teaching</li>
+              <li><b>Positive school climate:</b> a safe environment built on social-emotional skills and bullying prevention</li>
+              <li><b>Modern teaching:</b> experiential learning and active pupil participation</li>
             </ul>
 
             <h4>🤝 <span data-l="el">Σχολεία-εταίροι</span><span data-l="en">Partner schools</span></h4>
@@ -65,19 +69,65 @@
               <li>🇮🇪 Saint Catherine’s National School, Dublin – <span data-l="el">Ιρλανδία</span><span data-l="en">Ireland</span></li>
             </ul>
 
-            <h4>✈️ <span data-l="el">Δραστηριότητες</span><span data-l="en">Activities</span></h4>
+            <div class="act-grid">
+              <div class="act" style="--c:var(--green)">
+                <b>🎒 <span data-l="el">Ανταλλαγές μαθητών</span><span data-l="en">Pupil exchanges</span></b>
+                <span class="num">10 <span data-l="el">μαθητές</span><span data-l="en">pupils</span></span>
+                <p data-l="el">Δύο ομάδες των 5 μαθητών της Ε΄ και ΣΤ΄ τάξης, για 5 ημέρες στην Κύπρο και την Ιταλία. Οι μαθητές μπαίνουν στις τάξεις του σχολείου υποδοχής, δουλεύουν σε μικτές ομάδες, δημιουργούν ψηφιακά έργα και συμμετέχουν σε διαπολιτισμικά εργαστήρια και εργαστήρια STEAM (ρομποτική, coding, Lego, πειράματα).</p>
+                <p data-l="en">Two groups of 5 pupils from Grades 5–6, for 5 days in Cyprus and Italy. Pupils join classes at the host school, work in mixed teams, create digital projects and take part in intercultural and STEAM workshops (robotics, coding, Lego, experiments).</p>
+              </div>
+              <div class="act" style="--c:var(--red)">
+                <b>👀 Job shadowing</b>
+                <span class="num">6 <span data-l="el">εκπαιδευτικοί</span><span data-l="en">teachers</span></span>
+                <p data-l="el">Δύο εκπαιδευτικοί σε κάθε σχολείο-εταίρο παρατηρούν στην πράξη: Universal Design for Learning και διαφοροποιημένη διδασκαλία, coding, ρομποτική και εργαλεία ΤΝ, πρακτικές κοινωνικο-συναισθηματικής μάθησης, Project-Based Learning, υπαίθρια εκπαίδευση και gamification.</p>
+                <p data-l="en">Two teachers at each partner school observe in practice: Universal Design for Learning and differentiated teaching, coding, robotics and AI tools, social-emotional learning practices, Project-Based Learning, outdoor education and gamification.</p>
+              </div>
+              <div class="act" style="--c:var(--blue)">
+                <b>🎓 <span data-l="el">Επιμορφωτικά σεμινάρια</span><span data-l="en">Training courses</span></b>
+                <span class="num">9 <span data-l="el">εκπαιδευτικοί</span><span data-l="en">teachers</span></span>
+                <ul>
+                  <li>🇪🇸 Innovative and Active Methodologies for Teaching and Learning <small>(Madrid)</small></li>
+                  <li>🇫🇮 Future AI Classroom <small>(Helsinki)</small></li>
+                  <li>🇪🇸 Conflict Management, Emotional Intelligence and Bullying Prevention <small>(Barcelona)</small></li>
+                  <li>🇮🇸 Smart Teachers Play More Outdoors <small>(Reykjavik)</small></li>
+                  <li>🇮🇸 CLIL Methodology <small>(Reykjavik)</small></li>
+                </ul>
+              </div>
+            </div>
+
+            <h4>📏 <span data-l="el">Πώς αξιολογούμε τη μάθηση</span><span data-l="en">How we evaluate learning</span></h4>
             <ul data-l="el">
-              <li><b>Ανταλλαγές μαθητών:</b> 10 μαθητές της Ε΄ και ΣΤ΄ τάξης επισκέπτονται τα σχολεία-εταίρους στην Κύπρο και την Ιταλία</li>
-              <li><b>Παρακολούθηση εργασίας (job shadowing):</b> 6 εκπαιδευτικοί παρατηρούν τη διδακτική πράξη στην Κύπρο, την Ιταλία και την Ιρλανδία</li>
-              <li><b>Επιμορφωτικά σεμινάρια:</b> 9 εκπαιδευτικοί σε Ισπανία (Μαδρίτη, Βαρκελώνη), Φινλανδία και Ισλανδία</li>
+              <li><b>Πριν:</b> ερωτηματολόγια αυτοαξιολόγησης και συζήτηση για τις προσδοκίες</li>
+              <li><b>Κατά τη διάρκεια:</b> ημερολόγιο εμπειριών των μαθητών, παρατήρηση από τους εκπαιδευτικούς και ψηφιακό portfolio (φωτογραφίες, βίντεο, δημιουργίες)</li>
+              <li><b>Μετά:</b> επανάληψη των ερωτηματολογίων, παρουσιάσεις στο σχολείο, ομάδες συζήτησης με τους μαθητές και ανατροφοδότηση από τα σχολεία υποδοχής</li>
+              <li><b>Μακροπρόθεσμα:</b> παρακολούθηση της συμμετοχής, της ένταξης και της συνεργασίας των μαθητών, π.χ. σε έργα eTwinning</li>
             </ul>
             <ul data-l="en">
-              <li><b>Pupil exchanges:</b> 10 pupils of Grades 5–6 visit our partner schools in Cyprus and Italy</li>
-              <li><b>Job shadowing:</b> 6 teachers observe teaching practice in Cyprus, Italy and Ireland</li>
-              <li><b>Training courses:</b> 9 teachers in Spain (Madrid, Barcelona), Finland and Iceland</li>
+              <li><b>Before:</b> self-assessment questionnaires and a talk about expectations</li>
+              <li><b>During:</b> pupils' experience diaries, teacher observation and a digital portfolio (photos, videos, creations)</li>
+              <li><b>After:</b> repeated questionnaires, presentations at school, pupil focus groups and feedback from the host schools</li>
+              <li><b>Long term:</b> following pupils' participation, inclusion and collaboration, e.g. in eTwinning projects</li>
             </ul>
 
-            <p style="margin-top:16px"><a href="mobilities.html"><b><span data-l="el">→ Δείτε το χρονολόγιο των κινητικοτήτων</span><span data-l="en">→ See the mobility timeline</span></b></a></p>
+            <h4>🔄 <span data-l="el">Τι μένει στο σχολείο μας</span><span data-l="en">What stays in our school</span></h4>
+            <ul data-l="el">
+              <li>Σχέδιο ενσωμάτωσης που εγκρίνει ο Σύλλογος Διδασκόντων: Project-Based Learning σε τουλάχιστον δύο ενότητες ανά τετράμηνο, μία υπαίθρια δράση τον μήνα σε κάθε τάξη, νέες μορφές αξιολόγησης και ψηφιακά εργαλεία, συμπεριληπτικές πρακτικές</li>
+              <li>Οδηγός Καλών Πρακτικών με σχέδια μαθημάτων και υλικό από τις κινητικότητες</li>
+              <li>Κάθε εκπαιδευτικός που ταξίδεψε γίνεται μέντορας για 2–3 συναδέλφους, με μηνιαίες συναντήσεις ανταλλαγής εμπειριών</li>
+              <li>Οι μαθητές συνεχίζουν τη συνεργασία με τα σχολεία υποδοχής μέσα από έργα eTwinning</li>
+            </ul>
+            <ul data-l="en">
+              <li>An integration plan approved by the Teachers' Council: Project-Based Learning in at least two units per term, one outdoor activity a month in every class, new forms of assessment and digital tools, inclusive practices</li>
+              <li>A Good Practice Guide with lesson plans and materials from the mobilities</li>
+              <li>Every teacher who travelled mentors 2–3 colleagues, with monthly peer-learning meetings</li>
+              <li>Pupils continue working with the host schools through eTwinning projects</li>
+            </ul>
+
+            <h4>📣 <span data-l="el">Πώς μοιραζόμαστε τα αποτελέσματα</span><span data-l="en">How we share the results</span></h4>
+            <p data-l="el">Με επιμορφώσεις και εργαστήρια μέσα στο σχολείο, ενημέρωση των γονέων, αυτή την ιστοσελίδα και τα μέσα κοινωνικής δικτύωσης, παρουσιάσεις σε Ημέρες Erasmus+ και συνέδρια (π.χ. Εθνικό Συνέδριο eTwinning), μία εκδήλωση διάχυσης για σχολεία της Θεσσαλίας και την πλατφόρμα eTwinning.</p>
+            <p data-l="en">Through in-school training and workshops, newsletters for parents, this website and social media, presentations at Erasmus+ Days and conferences (e.g. the National eTwinning Conference), a multiplier event for schools in Thessaly, and the eTwinning platform.</p>
+
+            <p style="margin-top:18px"><a href="mobilities.html"><b><span data-l="el">→ Δείτε το χρονολόγιο των κινητικοτήτων</span><span data-l="en">→ See the mobility timeline</span></b></a></p>
             <p style="font-size:.88rem;color:var(--muted)"><span data-l="el">Αριθμός έργου</span><span data-l="en">Project number</span>: 2026-1-EL01-KA122-SCH-000404976</p>
           </details>
         </article>
@@ -106,6 +156,6 @@
   </div>
 </section>
 
-<script src="script.js?v=7"></script>
+<script src="script.js?v=9"></script>
 </body>
 </html>
