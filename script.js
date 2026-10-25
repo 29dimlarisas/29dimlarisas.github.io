@@ -9,13 +9,14 @@ var SCHOOL = {
   address_en: "34, 31st August Street, 41221 Larissa, Greece",
   phone: "2410 288327",
   email: "mail@29dim-laris.lar.sch.gr",
-  web: "",          // π.χ. "https://29dim-laris.lar.sch.gr" (αφήστε κενό αν δεν θέλετε)
+  web: "http://29dim-laris.lar.sch.gr/",          // π.χ. "https://29dim-laris.lar.sch.gr" (αφήστε κενό αν δεν θέλετε)
   facebook: "https://www.facebook.com/profile.php?id=61594135984559"
 };
 
 /* Μενού: [αρχείο, Ελληνικά, English] */
 var NAV = [
   ["index.html",      "Αρχική",         "Home"],
+  ["school.html",     "Το σχολείο",     "Our School"],
   ["news.html",       "Νέα",            "News"],
   ["erasmus.html",    "Erasmus+",       "Erasmus+"],
   ["etwinning.html",  "eTwinning",      "eTwinning"],
@@ -95,6 +96,7 @@ var NAV = [
     else if (k === "phone") el.innerHTML = '<a href="tel:' + SCHOOL.phone.replace(/\s/g, "") + '">' + SCHOOL.phone + '</a>';
     else if (k === "address") el.innerHTML = bi(SCHOOL.address_el, SCHOOL.address_en);
     else if (k === "facebook") el.setAttribute("href", SCHOOL.facebook);
+    else if (k === "mailto") el.setAttribute("href", "mailto:" + SCHOOL.email);
   });
 
   /* ---- Φίλτρα κινητικοτήτων ---- */
