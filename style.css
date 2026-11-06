@@ -310,6 +310,7 @@ details{clear:both}
 .article-body p{font-size:1.08rem}
 .article-body .lead{font-size:1.25rem;font-weight:700;color:var(--ink);line-height:1.5}
 .article-body .closing{font-weight:800;color:var(--green);font-size:1.15rem}
+.article-body .banner{width:100%;border-radius:18px;margin:0 0 24px;box-shadow:var(--shadow)}
 .article-photos{clear:both;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
 .article-photos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;cursor:zoom-in;box-shadow:var(--shadow);border:5px solid #fff}
 .wide-photos{grid-template-columns:1fr}
